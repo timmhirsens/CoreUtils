@@ -1,0 +1,13 @@
+name: ${project.name}
+version: ${project.version} b${buildNumber}
+description: Essential tools for the Vanilla Spout Plugin.
+author: fr1zle
+website: www.br0tbox.de
+
+main: ${mainClass}
+load: startup
+platform: SERVER
+
+data:
+
+    protocol: ${protocolVersion}
