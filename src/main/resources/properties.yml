@@ -7,7 +7,3 @@ website: www.br0tbox.de
 main: ${mainClass}
 load: startup
 platform: SERVER
-
-data:
-
-    protocol: ${protocolVersion}

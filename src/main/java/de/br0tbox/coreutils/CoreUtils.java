@@ -9,6 +9,7 @@ import org.spout.api.command.annotated.SimpleInjector;
 import org.spout.api.plugin.CommonPlugin;
 import org.spout.api.plugin.Plugin;
 
+import de.br0tbox.coreutils.command.ButcherCommand;
 import de.br0tbox.coreutils.command.TeleportCommands;
 import de.br0tbox.coreutils.teleport.TeleportationManager;
 
@@ -26,6 +27,7 @@ public class CoreUtils extends CommonPlugin {
 		Plugin vanilla = getEngine().getPluginManager().getPlugin("Vanilla");
 		if (vanilla != null) {
 			getLogger().info("Found Vanilla, enabling features.");
+			root.addSubCommands(this, ButcherCommand.class, commandRegFactory);
 		}
 		getLogger().info("enabled");
 	}
